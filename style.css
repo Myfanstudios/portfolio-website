@@ -1,25 +1,28 @@
 /* This is my Mood-board variables - Completed via Mood boarding */
-:root {
-    --bg-primary: #211c1a;
-    --text-body: #f5f6f1;
-    --h1-color: #72787c;
-    --h2-color: #f5f6f1;
-    --accent: #845b2e;
+
+      :root {
+           --bg-primary: #211c1a;
+           --text-body: #f5f6f1;
+           --h1-color: #72787c;
+           --h2-color: #f5f6f1;
+           --accent: #845b2e;
   }
   
-  /* My sizing and settings base */
+  /* My sizing and settings for my base */
+
   * {
     margin: 0; padding: 0; box-sizing: border-box;
   }
   body {
     background: var(--bg-primary);
     color: var(--text-body);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  /* made sure it defauts back below*/
     line-height: 1.6;
     overflow-x: hidden;
   }
-  
-  /* NAV Bar - based to setup*/
+
+  /* NAV Bar - based to setup for my nav*/
+
   nav {
     background: rgba(0,0,0,0.2);
     position: sticky; top: 0;
@@ -58,12 +61,14 @@
     margin: 0 auto;
   }
   
-  /* SECTIONS */
-  .section {
+ /* SECTIONS */
+.section {
     padding: 3rem 1rem;
-    max-width: 800px;
+    max-width: 1200px; /* <<< changed from 800px to 1200px */
     margin: 0 auto;
   }
+  
+  /* SECTION HEADING */
   .section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -74,25 +79,111 @@
   /* PROJECTS GRID */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  /* LOGO IMAGE INSIDE CARD */
+  .project-card img.project-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* RESPONSIVE FOR MOBILE */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* single column on mobile */
+    }
+  }
+  
+  
   .project-card {
     background: rgba(255,255,255,0.1);
     padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform .3s, background .3s;
-  }
-  .project-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.2);
-  }
-  .project-card h3 {
-    color: var(--accent);
-    margin-bottom: .5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; /* LIMIT card size */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  .project-card img.project-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* make sure logos don't stretch too much */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* MOBILE responsive */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
+  }
+  
+
+    /* Projects container uses Flexbox */
+
+    .projects-grid {
+        display: grid;                 /* Use grid layout */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 20px;                     /* Space between cards */
+        justify-items: center;         /* Center the cards */
+        margin-top: 40px;
+      }
+      
+      .project-card {
+        background-color: #211C1A;    /* Your moodboard background color */
+        color: #F5F6F1;               /* Your paragraph text color */
+        padding: 20px;
+        border-radius: 10px;          /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow */
+        width: 100%;                  /* Full width inside grid */
+        max-width: 400px;              /* Limit so they aren't huge */
+        text-align: center;
+      }
+      
+      .project-logo {
+        width: 100%;             /* Image takes full width of card */
+        aspect-ratio: 1/1;        /*  = always a square shape */
+        object-fit: cover;        /* Zooms/crops the image so it fits nicely */
+        padding: 10px;            /* Space around the image */
+        border-radius: 10%;       /* Rounded corners (10% curve) */
+        background-color: #F5F6F1; /* Optional: background behind image padding */
+        box-sizing: border-box;   /* Makes padding stay inside the width */
+      }
+
   /* LINKS */
+
   a {
     color: var(--accent);
   }
@@ -101,6 +192,7 @@
   }
   
   /* FOOTER */
+
   footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -109,6 +201,7 @@
   }
   
   /* ANIMATION */
+
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0);    }
