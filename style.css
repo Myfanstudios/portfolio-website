@@ -1,0 +1,116 @@
+/* This is my Mood-board variables - Completed via Mood boarding */
+:root {
+    --bg-primary: #211c1a;
+    --text-body: #f5f6f1;
+    --h1-color: #72787c;
+    --h2-color: #f5f6f1;
+    --accent: #845b2e;
+  }
+  
+  /* My sizing and settings base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    background: var(--bg-primary);
+    color: var(--text-body);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* NAV Bar - based to setup*/
+  nav {
+    background: rgba(0,0,0,0.2);
+    position: sticky; top: 0;
+    backdrop-filter: blur(5px);
+  }
+  .nav-list {
+    list-style: none;
+    display: flex; justify-content: center;
+    gap: 2rem; padding: 1rem 0;
+  }
+  .nav-list a {
+    color: var(--text-body);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .3s;
+  }
+  .nav-list a:hover {
+    color: var(--accent);
+  }
+  
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    animation: fadeIn 1.2s ease-out;
+  }
+  .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: var(--h1-color);
+    margin-bottom: .5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* SECTIONS */
+  .section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--h2-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* PROJECTS GRID */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform .3s, background .3s;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.2);
+  }
+  .project-card h3 {
+    color: var(--accent);
+    margin-bottom: .5rem;
+  }
+  
+  /* LINKS */
+  a {
+    color: var(--accent);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: .9rem;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  /* ANIMATION */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0);    }
+  }
+  
