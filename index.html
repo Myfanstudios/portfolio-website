@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Simon Lee – My Military Studio</title>
 
- <!-- My Google Fonts (Montserrat for headings, Roboto for body) -->
- <link
- href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
- rel="stylesheet"
+  <!-- My Google Fonts (Montserrat for headings, Roboto for body) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <!-- Stylesheet -->
-
-  <!-- Core Foundation Styles
-       - Resets browser defaults (margins, paddings)
-       - Sets base typography & accessible colors-->
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-
-
   <!-- NAVIGATION -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+  </ul>
+  <div class="social-icons">
+    <a href="https://facebook.com/mymilitar" target="_blank" class="fab fa-facebook"></a>
+    <a href="https://instagram.com/mymilitar" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://youtube.com/mymilitar" target="_blank" class="fab fa-youtube"></a>
+  </div>
+</nav>
 
   <!-- HERO BANNER -->
 
@@ -37,6 +42,8 @@
     <h1>Simon Lee</h1>
     <p>Ex-military turned web developer—building clean, efficient, and engaging websites.</p>
   </header>
+
+
 
   <!-- ABOUT ME -->
 
@@ -48,8 +55,9 @@
     </p>
   </section>
 
-<!-- PROJECTS GRID -->
 
+
+<!-- PROJECTS GRID -->
 
 <section id="projects" class="section">
 
@@ -57,7 +65,7 @@
      <div class="projects-grid">
       <article class="project-card">
         <!-- Image with relative path -->
-        <img src="src/Images/MMS%20square%20Logo.png" alt="My Military Studio Logo" class="project-logo">
+        <img src="src/Images/MMS square Logo.png" alt="My Military Studio Logo" class="project-logo">
         <h3>My Military Studio</h3>
         <p>A site dedicated to military-themed merchandise, including custom coins, apparel, and more. Focused on history, design, and creating products that honor the past.</p>
       </article>
@@ -67,7 +75,7 @@
         <p>A blog and resource site for military history tours, focusing on battlefield sites, memorials, and personal stories. A blend of education and exploration through history.</p>
       </article>
       <article class="project-card">
-        <img src="src/Images/NapaLogo.png" alt="Napasings Logo" class="project-logo">
+        <img src="src/Images/Napalogo.png" alt="Napasings Logo" class="project-logo">
         <h3>Napasings</h3>
         <p>A creative portfolio and eCommerce site showcasing artwork, music, and design. Includes a shop for exclusive prints and merchandise by Napasings.</p>
       </article>
@@ -84,10 +92,16 @@
   </section>
 
   <!-- FOOTER -->
+
   <footer>
     <p>© 2025 Simon Lee — built with ☕ and code</p>
-
-
+    <div class="social-icons">
+      <a href="https://facebook.com/mymilitarystudio" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://instagram.com/mymilitarystudio" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank" class="fab fa-youtube"></a>
+    </div>
   </footer>
+
+
 </body>
 </html>
