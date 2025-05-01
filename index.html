@@ -5,47 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simon Lee – My Military Studio</title>
 
+  <!-- THIS IS MY SPECIAL REF LINKS GOOGLE FONTS AND AWESOME ICONS -->
+
   <!-- My Google Fonts (Montserrat for headings, Roboto for body) -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
   <!-- Font Awesome Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 
-  <!-- Stylesheet -->
+  <!--MAIN CSS-->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
-  <!-- NAVIGATION -->
+<body>
+
+<div id="home"></div>
+  
+<!-- NAVIGATION -->
 
 <nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-  </ul>
-  <div class="social-icons">
-    <a href="https://facebook.com/mymilitar" target="_blank" class="fab fa-facebook"></a>
-    <a href="https://instagram.com/mymilitar" target="_blank" class="fab fa-instagram"></a>
-    <a href="https://youtube.com/mymilitar" target="_blank" class="fab fa-youtube"></a>
-  </div>
-</nav>
 
-  <!-- HERO BANNER -->
+    <!-- Left: Badge -->
+    <div class="badge">
+        <img src="src/Images/MMS.png" alt="Explode logo" class="badge-icon">
+        <div class="badge-text">
+          <h2 class="badge-title">SIMON LEE</h2>
+          <h4 class="badge-subtitle">Portfolio</h4>
+        </div>
+      </div>
 
+    <!-- Center: Navigation Links -->
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="social-icons">
+      <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/mymilitarystudio" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.mymilitarystudio.com/collections/rasigs-100-year-anniversary-collection-1" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </nav>
+
+ 
+  <!-- HERO BANNER - WILL BE PAGE -->
   <header class="hero">
+  
     <h1>Simon Lee</h1>
     <p>Ex-military turned web developer—building clean, efficient, and engaging websites.</p>
   </header>
 
-
-
-  <!-- ABOUT ME -->
+  <!-- ABOUT ME - WILL BE PAGE -->
 
   <section id="about" class="section">
     <h2>About Me</h2>
@@ -55,34 +77,35 @@
     </p>
   </section>
 
-
-
-<!-- PROJECTS GRID -->
+<!-- PROJECTS - WILL BE PAGE -->
 
 <section id="projects" class="section">
+  <h2>Featured Work</h2>
+  <div class="projects-grid">
 
-    <h2>Featured Work</h2>
-     <div class="projects-grid">
-      <article class="project-card">
-        <!-- Image with relative path -->
-        <img src="src/Images/MMS square Logo.png" alt="My Military Studio Logo" class="project-logo">
-        <h3>My Military Studio</h3>
-        <p>A site dedicated to military-themed merchandise, including custom coins, apparel, and more. Focused on history, design, and creating products that honor the past.</p>
-      </article>
-      <article class="project-card">
-        <img src="src/Images/Tours of war Logo.png" alt="Tours of War Logo" class="project-logo">
-        <h3>Tours of War</h3>
-        <p>A blog and resource site for military history tours, focusing on battlefield sites, memorials, and personal stories. A blend of education and exploration through history.</p>
-      </article>
-      <article class="project-card">
-        <img src="src/Images/Napalogo.png" alt="Napasings Logo" class="project-logo">
-        <h3>Napasings</h3>
-        <p>A creative portfolio and eCommerce site showcasing artwork, music, and design. Includes a shop for exclusive prints and merchandise by Napasings.</p>
-      </article>
-    </div>
-  </section>
+    <article class="project-card">
+      <img src="src/Images/MMS square Logo.png" alt="My Military Studio Logo" class="project-logo">
+      <h3>My Military Studio</h3>
+      <p>Military-themed merchandise including coins and apparel.</p>
+    </article>
 
-  <!-- CONTACT -->
+    <article class="project-card">
+      <img src="src/Images/1.png" alt="Tours of War Logo" class="project-logo">
+      <h3>Tours of War</h3>
+      <p>History tours across battlefields, memorials, and war stories told right.</p>
+    </article>
+
+    <article class="project-card">
+      <img src="src/Images/1.png" alt="Napasings Logo" class="project-logo">
+      <h3>Napasings</h3>
+      <p>Creative site for original prints, music, and artistic military design.</p>
+    </article>
+
+  </div>
+</section>
+
+  <!-- CONTACT - MAKE FORM PAGE -->
+
   <section id="contact" class="section">
     <h2>Get in Touch</h2>
     <p>
@@ -99,9 +122,9 @@
       <a href="https://facebook.com/mymilitarystudio" target="_blank" class="fab fa-facebook"></a>
       <a href="https://instagram.com/mymilitarystudio" target="_blank" class="fab fa-instagram"></a>
       <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank" class="fab fa-youtube"></a>
+<a href="https://www.mymilitarystudio.com/collections/rasigs-100-year-anniversary-collection-1" target="_blank" class="fas fa-shopping-cart"></a>
+
+
     </div>
+
   </footer>
-
-
-</body>
-</html>

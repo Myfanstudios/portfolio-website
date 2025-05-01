@@ -5,13 +5,14 @@
            --text-body: #f5f6f1;
            --h1-color: #72787c;
            --h2-color: #f5f6f1;
+           --h3-color: #845b2e;
            --accent: #845b2e;
   }
   
-  /* My sizing and settings for my base */
+  /*MY SETTINGS -  My sizing and settings for my base */
 
   * {
-    margin: 0; padding: 0; box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box; 
   }
   body {
     background: var(--bg-primary);
@@ -21,9 +22,94 @@
     overflow-x: hidden;
   }
 
-  /* NAV Bar - based to setup for my nav*/
 
+  /* NAVIGATION BAR - based to setup for my nav*/
 
+/* === NAVIGATION BAR STYLES === */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* LEFT: Badge */
+  .badge {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000;
+    width: 90%;
+    height: 75px;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px #c0c0c0, 0 0 20px #FFD700;
+  }
+  
+  .badge-title {
+    color: #FFD700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  .badge-subtitle {
+    color: #C0C0C0;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  /* CENTER: Navigation Links */
+  .nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: var(--text-body);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent);
+  }
+  
+  /* RIGHT: Social Icons */
+  .social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: #845b2e;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+    box-shadow: 
+  }
+  
+  .social-icons a:hover {
+    color: #FFD700;
+  }
   
   /* HERO */
   .hero {
@@ -58,114 +144,48 @@
     margin-bottom: 1rem;
   }
   
-  /* PROJECTS GRID */
+  /* PROJECTS CARDS */
+
+  /* Projects Grid Container – using CSS Grid for layout */
+
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 40px;
   }
-  
+
   .project-card {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text for contrast  I did try gold, did not work*/
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 350px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #211C1A;
+  color: #F5F6F1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.project-logo {
+    width: 95%;             /* Image takes full width of card */
+    aspect-ratio: 1/1;        /*  = always a square shape */
+    object-fit: cover;        /* Zooms/crops the image so it fits nicely */
+    padding: 10px;            /* Space around the image */
+    border-radius: 10%;       /* Rounded corners (10% curve) */
+    background-color: #211C1A; /* Optional: background behind image padding */
+    box-sizing: border-box;   /* Makes padding stay inside the width */
+    box-shadow: 
+    0 0 10px #c0c0c0,
+    0 0 20px #FFD700;
   }
-  
-  
+      
   .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  }
-  /* LOGO IMAGE INSIDE CARD */
-  .project-card img.project-logo {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  /* RESPONSIVE FOR MOBILE */
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr; /* single column on mobile */
-    }
-  }
-  
-  
-  .project-card {
-    background: rgba(255,255,255,0.1);
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 300px; /* LIMIT card size */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .project-card img.project-logo {
-    width: 100%;
-    height: auto;
-    max-width: 300px; /* make sure logos don't stretch too much */
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  /* MOBILE responsive */
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr; /* 1 card per row on mobile */
-    }
-  }
-  
+    transition: transform 0.3s ease:
+  }     
 
-    /* Projects container uses Flexbox */
-
-    .projects-grid {
-        display: grid;                 /* Use grid layout */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-        gap: 20px;                     /* Space between cards */
-        justify-items: center;         /* Center the cards */
-        margin-top: 40px;
-      }
-      
-      .project-card {
-        background-color: #211C1A;    /* Your moodboard background color */
-        color: #F5F6F1;               /* Your paragraph text color */
-        padding: 20px;
-        border-radius: 10px;          /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow */
-        width: 100%;                  /* Full width inside grid */
-        max-width: 400px;              /* Limit so they aren't huge */
-        text-align: center;
-      }
-      
-      .project-logo {
-        width: 100%;             /* Image takes full width of card */
-        aspect-ratio: 1/1;        /*  = always a square shape */
-        object-fit: cover;        /* Zooms/crops the image so it fits nicely */
-        padding: 10px;            /* Space around the image */
-        border-radius: 10%;       /* Rounded corners (10% curve) */
-        background-color: #F5F6F1; /* Optional: background behind image padding */
-        box-sizing: border-box;   /* Makes padding stay inside the width */
-      }
-
-  /* LINKS */
+  /* MY LINKS */
 
   a {
     color: var(--accent);
@@ -174,7 +194,7 @@
     text-decoration: underline;
   }
   
-  /* FOOTER */
+  /* MY FOOTER */
 
   footer {
     text-align: center;
@@ -183,10 +203,92 @@
     background: rgba(0,0,0,0.3);
   }
   
-  /* ANIMATION */
+
+  /* MY BADGE STYLE */
+
+  .badge {
+    background-color: #000;
+    border-radius: 12px;
+    display: inline-flex;         /* acts like a button */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #c0c0c0, 0 0 20px #FFD700;
+    padding: 0.4rem 1rem;         /* tighter padding */
+    position: relative;
+    width: auto;                  /* no fixed width */
+    margin: 0 auto;               /* centers if parent allows */
+  }
+  .badge-title,
+  .badge-subtitle {
+    font-size: 1.5rem; 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1; /* this will prevent extra vertical spacing */
+  }
+  
+  .badge-title {
+    color: #FFD700;
+  }
+  
+  .badge-subtitle {
+    color: #c0c0c0;
+  }
+
+  .badge {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .badge-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: 1;
+  }
+  
+  .badge-text {
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.8s ease;
+  }
+  
+  .badge:hover .badge-icon {
+    opacity: 1;
+  }
+  
+  .badge:hover .badge-text {
+    opacity: 0;
+  }
+
+  /* MY ANIMATION - PLAN for text move, fadein picture fadeout on mousever*/
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(20px); } /*fadein picture on mousever on projects*/
     to   { opacity: 1; transform: translateY(0);    }
   }
   
+   /*Exploding Badge Logo - NOT WORKING DAMM*/
+
+  @keyframes explode {
+    0% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(3) rotate(45deg);
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
