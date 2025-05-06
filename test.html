@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hero Test</title>
+  <style>
+    :root {
+      --bg-primary: #211c1a;
+      --accent: #845b2e;
+    }
+    body {
+      margin: 0; padding: 0; background: var(--bg-primary); display: flex; justify-content: center; align-items: center; height: 100vh;
+    }
+    .section-hero {
+      background: rgba(0,0,0,0.4);
+      padding: 3rem 2rem;
+      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,215,0,0.3), 0 0 15px #C0C0C0;
+      max-width: 600px;
+    }
+    .section-hero__title {
+      color: #FFD700; font-family: Montserrat, sans-serif; text-shadow: 0 0 2px #C0C0C0,0 0 6px #FFD700; margin-bottom:1rem;
+    }
+    .section-hero__content {
+      display: flex; gap: 1rem; align-items: center; flex-direction: row-reverse;
+    }
+    .section-hero__image img {
+      width: 150px; border-radius: 8px; box-shadow: 0 0 10px #FFD700,0 0 14px #C0C0C0;
+    }
+    .section-hero__text { color: #f5f6f1; font-family: Roboto, sans-serif; }
+    @media(max-width:600px) {
+      .section-hero__content { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <section class="section-hero">
+    <h2 class="section-hero__title">Hero Test</h2>
+    <div class="section-hero__content">
+      <div class="section-hero__image">
+        <!-- adjust the path to exactly your image location: -->
+        <img src="src/Images/shop1.png" alt="Test">
+      </div>
+      <div class="section-hero__text">
+        <p>If you see the picture and the box styling, everything’s wired up correctly.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
