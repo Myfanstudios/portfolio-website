@@ -3,138 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact me</title>
+  <title>Contact Me — Simon Lee</title>
 
-  <!-- THIS IS MY SPECIAL REF LINKS GOOGLE FONTS AND AWESOME ICONS -->
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <!-- My Google Fonts (Montserrat for headings, Roboto for body) -->
-  <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
-
-  <!-- Font Awesome Icons -->
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <!--MAIN CSS-->
-
-  <link rel="stylesheet" href="style.css" />
-
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<div id="contact"></div>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
   
-<!-- NAVIGATION BAR -->
-
-<nav class="navbar">
-
-    <!-- BADGE - LEFT SIDE -->
-
-    <div class="badge">
-        <img src="src/Images/MMS.png" alt="Explode logo" class="badge-icon">
+    <div class="nav-center">
+      <div class="badge">
+        <img src="src/Images/MMS.png" alt="Logo" class="badge-icon"/>
         <div class="badge-text">
           <h2 class="badge-title">SIMON LEE</h2>
           <h4 class="badge-subtitle">Portfolio</h4>
         </div>
       </div>
-
-    <!-- NAVIGATION - CENTER -->
-
-    <div class="nav-center">
-
-<ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+  
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-socials">
+        <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.mymilitarystudio.com" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </div>
+  </nav>
+  
 
-    <!-- ICON SOCIAL - RIGHT -->
+  <!-- HERO BANNER -->
+  <section class="contact-section">
+    <h2 class="section-hero__title">Contact Me</h2>
+    <div class="section-hero__text">
+      <p>Let’s get in touch. Reach out through socials, form, or direct email.</p>
+    </div>
+  </section>
 
+  <!-- OUR SOCIALS -->
+  <section class="contact-section">
+    <h2 class="section-hero__title">Our Socials</h2>
+    <p>Follow me and stay updated with my latest work and projects.</p>
     <div class="social-icons">
       <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.mymilitarystudio.com/collections/rasigs-100-year-anniversary-collection-1" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-  </nav>
+  </section>
 
- <!-- HERO BANNER – PAGE INTRO -->
-<header class="hero">
-  <h1>Contact Me</h1>
-  <p>Let’s get in touch. Reach out through socials, form, or direct email.</p>
-</header>
+  <!-- CONTACT FORM -->
+  <section class="contact-section">
+    <h2 class="section-hero__title">Contact Form</h2>
+    <p>Prefer a message? Fill out the form below and I’ll get back to you. (Sample only)</p>
+    <form class="contact-form" action="#" method="POST">
+      <label>First Name* <input type="text" name="first" required></label>
+      <label>Last Name* <input type="text" name="last" required></label>
+      <label>Email* <input type="email" name="email" required></label>
+      <label>Phone Number <input type="tel" name="phone"></label>
+      <label>Country <input type="text" name="country"></label>
+      <label>Message <textarea name="message" rows="5" required></textarea></label>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<!-- MY SOCIALS -->
-<section class="hero">
-  <h2>Our Socials</h2>
-  <p>Follow me and stay updated with my latest work and projects.</p>
-  <div class="social-icons" style="justify-content: center; margin-top: 1rem;">
-    <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://youtube.com/mymilitarystudio" target="_blank"><i class="fab fa-youtube"></i></a>
-  </div>
-</section>
+  <!-- DIRECT EMAIL BOX -->
+  <section class="contact-section">
+    <h2 class="section-hero__title">Contact Me Directly</h2>
+    <p>Prefer email? Reach me any time at:
+      <a href="mailto:hello@mymilitarystudio.com">hello@mymilitarystudio.com</a>
+    </p>
+  </section>
 
-<!-- CONTACT FORM BOX -->
-
-<section class="hero">
-  <h2>Contact Form</h2>
-  <p>Prefer a message?<p></p> Fill out the form below and I’ll get back to you.<p></p> This is SAMPLE only - Example of form only
-
-  </p>
-  <form class="contact-form" action="#" method="POST">
-    <label>First Name* <input type="text" name="first" required></label>
-    <label>Last Name* <input type="text" name="last" required></label>
-    <label>Email* <input type="email" name="email" required></label>
-    <label>Phone Number <input type="tel" name="phone"></label>
-    <label>Country <input type="text" name="country"></label>
-    <label>Message <textarea name="message" rows="5" required></textarea></label>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<!-- DIRECT EMAIL BOX -->
-
-<section class="hero">
-  <h2>Contact Me Directly</h2>
-  <p>Prefer email? Reach me any time at: 
-    <a href="mailto:hello@mymilitarystudio.com">hello@mymilitarystudio.com</a>
-  </p>
-</section>
-
+  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
-
-      <!-- ICON LEFT -->
-
       <div class="footer-left">
         <div class="icon-glow-square">
-          <img src="src/Images/3.png" alt="Footer Icon" class="footer-icon-img" />
+          <img src="src/Images/3.png" alt="Footer Icon" class="footer-icon-img"/>
         </div>
       </div>
-  
-      <!-- NAVIGATION - CENTERED -->
       <div class="footer-center">
-
         <ul class="footer-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        
       </div>
-  
-      <!-- SOCIALS - RIGHT SIDE-->
-
       <div class="footer-right">
         <div class="footer-social">
           <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -144,10 +117,10 @@
         </div>
       </div>
     </div>
-  
-    <!-- BOTTOM ROW -->
-
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Simon Lee — built with ☕ and code</p>
     </div>
   </footer>
+
+</body>
+</html>

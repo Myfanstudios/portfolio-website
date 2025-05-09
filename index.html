@@ -3,148 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Simon Lee – My Military Studio</title>
 
-  <!-- THIS IS MY SPECIAL REF LINKS GOOGLE FONTS AND AWESOME ICONS -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- My Google fonts -->
-
-  <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
   <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <!--MAIN CSS-->
-
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
-  <style>html { scroll-behavior: smooth; }</style>
-
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-
+  <!-- NAVIGATION -->
   <nav class="navbar">
-
-    <!--MY BADGE - LEFT SIDE -->
-    <div class="badge">
-      <img src="src/Images/MMS.png" alt="Explode logo" class="badge-icon">
-      <div class="badge-text">
-        <h2 class="badge-title">SIMON LEE</h2>
-        <h4 class="badge-subtitle">Portfolio</h4>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  
+    <div class="nav-center">
+      <div class="badge">
+        <img src="src/Images/MMS.png" alt="Logo" class="badge-icon"/>
+        <div class="badge-text">
+          <h2 class="badge-title">SIMON LEE</h2>
+          <h4 class="badge-subtitle">Portfolio</h4>
+        </div>
+      </div>
+  
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-socials">
+        <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.mymilitarystudio.com" target="_blank"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </div>
-  
-    <!-- Center: Navigation Links -->
-
-  <ul class="nav-center nav-links">                   <!-- add `nav-center` wrapper class here -->
-    <li><a href="index.html">Home</a></li>            <!-- keep -->
-    <li><a href="about.html">About</a></li>           <!-- keep -->
-    <li><a href="projects.html">Projects</a></li>     <!-- keep -->
-    <li><a href="contact.html">Contact</a></li>       <!-- keep -->
-  </ul>            
-    
-      <!-- Right: Social Icons -->
-
-    <div class="social-icons">
-      <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.mymilitarystudio.com/collections/rasigs-100-year-anniversary-collection-1" target="_blank"><i class="fas fa-shopping-cart"></i></a>
-    </div>
-  
   </nav>
   
-   <!-- HERO BANNER -->
 
+  <!-- HERO SECTION -->
   <h2 class="section-hero__title">Simon Lee</h2>
-    
-   <section class="section-hero">
-  
+  <section class="section-hero">
     <div class="section-hero__content">
       <div class="section-hero__image">
         <img src="src/Images/MyProfile.jpeg" alt="Simon Lee Photo">
       </div>
       <div class="section-hero__text">
         <p>Ex-military turned web developer—building clean, efficient, and engaging websites.</p>
-
-    <!-- Intro paragraph -->
-
-    <p class="about-intro">
-      I bring the discipline of the military and the creativity of coding together. 
-      When I’m not at the keyboard, you’ll find me grabbing a coffee or tinkering 
-      with my next side project.
-    </p>
+        <p class="about-intro">
+          I bring the discipline of the military and the creativity of coding together. 
+          When I’m not at the keyboard, you’ll find me grabbing a coffee or tinkering 
+          with my next side project.
+        </p>
       </div>
     </div>
-
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects" class="section">
-  <h2>Explore My Work</h2>
-  <div class="features-grid">
+    <h2>Explore My Work</h2>
+    <div class="features-grid">
 
-    <a href="https://www.mymilitarystudio.com/pages/veteran-art-studio" class="feature-card" target="_blank" rel="noopener">
-      <img src="src/Images/MMS square Logo.png" alt="Projects Icon" class="feature-img">
-      <h3>My Studio</h3>
-      <p>View a portfolio of web, design, and product builds crafted with purpose and precision.</p>
-      <span class="feature-link">See Projects →</span>
-    </a>
-
-    <a href="about.html#skills-overview" class="feature-card">
-      <img src="src/Images/Home Page.png" alt="Skills Icon" class="feature-img">
-      <h3>My Skills</h3>
-      <p>Explore my background in web &amp; graphic development, UI/UX design, and platform expertise.</p>
-      <span class="feature-link">Read Blog →</span>
-    </a>
-    
-    <article class="feature-card">
-      <img src="src/Images/shop 2.jpg" alt="Shop Icon" class="feature-img">
-      <h3>My Shop</h3>
-      <p>Check out custom‑designed military‑inspired apparel, coins, and collectibles.</p>
-      <a
-        href="https://www.mymilitarystudio.com/collections/rasigs-royal-australian-signals-collection"
-        class="feature-link"
-        target="_blank"
-      >
-        Shop Now →
+      <a href="https://www.mymilitarystudio.com/pages/veteran-art-studio" class="feature-card" target="_blank" rel="noopener">
+        <img src="src/Images/MMS square Logo.png" alt="Projects Icon" class="feature-img">
+        <h3>My Studio</h3>
+        <p>View a portfolio of web, design, and product builds crafted with purpose and precision.</p>
+        <span class="feature-link">See Projects →</span>
       </a>
-    </article>
 
-  </div>
-</section>
+      <a href="about.html#skills-overview" class="feature-card">
+        <img src="src/Images/Home Page.png" alt="Skills Icon" class="feature-img">
+        <h3>My Skills</h3>
+        <p>Explore my background in web &amp; graphic development, UI/UX design, and platform expertise.</p>
+        <span class="feature-link">Read Blog →</span>
+      </a>
 
-</body>
+      <article class="feature-card">
+        <img src="src/Images/shop 2.jpg" alt="Shop Icon" class="feature-img">
+        <h3>My Shop</h3>
+        <p>Check out custom-designed military-inspired apparel, coins, and collectibles.</p>
+        <a href="https://www.mymilitarystudio.com/collections/rasigs-royal-australian-signals-collection" class="feature-link" target="_blank">
+          Shop Now →
+        </a>
+      </article>
 
-  <!-- MY FOOTER SECTION HERE -->
+    </div>
+  </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
-      <!-- Left: Icon -->
+      <!-- Left Icon -->
       <div class="footer-left">
         <div class="icon-glow-square">
           <img src="src/Images/3.png" alt="Footer Icon" class="footer-icon-img" />
         </div>
       </div>
 
-   <!-- NAVIGATION - CENTERED -->
+      <!-- Center Nav -->
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-   <ul class="footer-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  
-      <!-- Right: Social Icons -->
+      <!-- Right Socials -->
       <div class="footer-right">
         <div class="footer-social">
           <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -154,10 +132,12 @@
         </div>
       </div>
     </div>
-  
-    <!-- BOTTOM ROW -->
 
+    <!-- Footer Bottom -->
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Simon Lee — built with ☕ and code</p>
     </div>
   </footer>
+
+</body>
+</html>

@@ -7,261 +7,210 @@
 
   <!-- THIS IS MY SPECIAL FONTS AND AWESOME ICONS SECTION -->
 
-  <!-- My Google Fonts (Montserrat for headings, Roboto for body) -->
   <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
-  <!-- Font Awesome Icons -->
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-
-  <!--MAIN CSS-->
-
   <link rel="stylesheet" href="style.css" />
-
 </head>
 
-<body> 
+<body>
 
-<div id="project"></div>
+  <div id="project"></div>
+
+  <!-- NAVIGATION -->
+ 
+  <nav class="navbar">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
   
-<!-- NAVIGATION -->
-
-<nav class="navbar">
-
-    <!-- Left: Badge -->
-    <div class="badge">
-        <img src="src/Images/MMS.png" alt="Explode logo" class="badge-icon">
+    <div class="nav-center">
+      <div class="badge">
+        <img src="src/Images/MMS.png" alt="Logo" class="badge-icon"/>
         <div class="badge-text">
           <h2 class="badge-title">SIMON LEE</h2>
           <h4 class="badge-subtitle">Portfolio</h4>
         </div>
       </div>
-
-    <!-- Center: Navigation Links -->
-    <div class="nav-center">
-
+  
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      
-      
-    </div>
-
-    <!-- Right: Social Icons -->
-    <div class="social-icons">
-      <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.mymilitarystudio.com/collections/rasigs-100-year-anniversary-collection-1" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+  
+      <div class="nav-socials">
+        <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/mymilitarystudio" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@MyMilitaryStudio" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.mymilitarystudio.com" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </div>
   </nav>
-
+  
+<!-- HERO SECTION -->
   <h2 class="section-hero__title">My Projects</h2>
   <section class="section-hero">
-  
     <div class="section-hero__content">
       <div class="section-hero__image">
         <img src="src/Images/3.png" alt="Project showcase">
       </div>
       <div class="section-hero__text">
-        <p> My Military Studio and history are my passion, and I’ve seamlessly 
+        <p>
+          My Military Studio and history are my passion, and I’ve seamlessly 
           woven them into my work as a web developer. Every site I build tells 
-          a story—whether it’s through custom‑designed military‑grade badges, 
-          heritage‑inspired color palettes, or narrative‑driven layouts that pay 
+          a story—whether it’s through custom-designed military-grade badges, 
+          heritage-inspired color palettes, or narrative-driven layouts that pay 
           homage to service and sacrifice. By combining rigorous attention to detail 
           with modern functionality, I create digital experiences that both honor 
-          our collective past and equip brands for tomorrow’s online landscape.</p>
+          our collective past and equip brands for tomorrow’s online landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- OUR CURRENT PROJECTS -->
+  <section id="projects" class="section">
+    <section class="section-hero">
+      <h2 class="section-hero__title">Our Current Projects</h2>
+    </section>
+
+<!-- Print-on-Demand -->
+    <div class="project-card graphic">
+      <h2>Print-on-Demand</h2>
+      <div class="card-content">
+        <img src="src/Images/pod.webp" alt="Print-on-Demand" class="card-graphic" />
+        <div class="card-text">
+          <p>
+            On-demand tees, mugs, stickers and more—designed, printed, and shipped with military-grade quality. 
+            From rugged challenge coins to custom apparel, every piece is battle-tested for durability, 
+            precision-crafted for collectors, and ready to deploy right to your doorstep.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Custom Products -->
+    <div class="project-card graphic">
+      <h2>Custom Products</h2>
+      <div class="card-content">
+        <img src="src/Images/COIN2.png" alt="Custom Products" class="card-graphic" />
+        <div class="card-text">
+          <p>
+            Coins, pins, embroidered patches, laser-etched gear—all handcrafted in-house to your exact specs. 
+            We specialize in low-run custom orders—challenge coins, military-grade flasks, bottle openers and 
+            more—each one designed, forged, and finished to your unique vision.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- My Brand -->
+    <div class="project-card graphic">
+      <h2>My Brand</h2>
+      <div class="card-content">
+        <img src="src/Images/shop1.png" alt="My Brand" class="card-graphic" />
+        <div class="card-text">
+          <p>
+            Clean layouts, bold accent pops, and a user-first approach across every digital touchpoint. 
+            We manufacture in-house and partner with premier print houses in the USA, Australia, and 
+            Thailand—ensuring each product meets our exacting standards. From branded apparel to specialty merch, 
+            every item carries the My Brand promise of quality, consistency, and standout design.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CURRENT PROJECTS -->
+<!-- EXPLORE MY WORK -->
+  <section class="section">
+    <h2>Explore My Work</h2>
+    <div class="features-grid">
+      <article class="feature-card">
+        <img src="src/Images/MMS square Logo.png" alt="Projects Icon" class="feature-img" />
+        <h3>My Military Studio</h3>
+        <p>Custom military-inspired apparel, challenge coins, and collectibles designed by veterans — for veterans and supporters.</p>
+        <a href="projects.html" class="feature-link">See Studio →</a>
+      </article>
 
-  <h1></h1>
-  <p></p>
-</header>
+      <article class="feature-card">
+        <img src="src/Images/2.png" alt="Skills Icon" class="feature-img" />
+        <h3>Napa Sings</h3>
+        <p>The official home of Napa — soulful vocals, heartfelt originals, and powerful covers straight from the heart of Australia.</p>
+        <a href="https://www.napasings.com" class="feature-link" target="_blank">Learn More →</a>
+      </article>
 
-<!-- PROJECTS -->
-
-<section id="projects" class="section">
-
-  <section class="section-hero">
-    <h2 class="section-hero__title">Our Current Projects</h2>
-
-
-    </section>
-
-<!-- Print‑on‑Demand -->
-<div class="project-card graphic">
-  <h2>Print‑on‑Demand</h2>
-  <div class="card-content">
-    <img
-      src="src/Images/pod.webp"
-      alt="Print‑on‑Demand"
-      class="card-graphic"
-    />
-    <div class="card-text">
-      <p>
-        On‑demand tees, mugs, stickers and more—designed, printed, and shipped with military‑grade quality. 
-        From rugged challenge coins to custom apparel, every piece is battle‑tested for durability, 
-        precision‑crafted for collectors, and ready to deploy right to your doorstep.
-      </p>
+      <article class="feature-card">
+        <img src="src/Images/1.png" alt="Skills Icon" class="feature-img" />
+        <h3>Tours of War</h3>
+        <p>Historical battlefield tours and veteran-led stories honoring the legacy of service, sacrifice, and remembrance across Asia-Pacific.</p>
+        <a href="#skills" class="feature-link">Read Blog →</a>
+      </article>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Custom Products -->
-
-<div class="project-card graphic">
-  <h2>Custom Products</h2>
-  <div class="card-content">
-    <img
-      src="src/Images/COIN2.png"
-      alt="Custom Products"
-      class="card-graphic"
-    />
-    <div class="card-text">
-      <p>
-        Coins, pins, embroidered patches, laser‑etched gear—all handcrafted in‑house to your exact specs. 
-        We specialize in low‑run custom orders—challenge coins, military‑grade flasks, bottle openers and 
-        more—each one designed, forged, and finished to your unique vision.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- My Brand -->
-
-<div class="project-card graphic">
-  <h2>My Brand</h2>
-  <div class="card-content">
-    <img
-      src="src/Images/shop1.png"
-      alt="My-brand"
-      class="card-graphic"
-    />
-    <div class="card-text">
-      <p>
-        Clean layouts, bold accent pops, and a user‑first approach across every digital touchpoint. 
-        We manufacture in‑house and partner with premier print houses in the USA, Australia, and 
-        Thailand—ensuring each product meets our exacting standards. From branded apparel to specialty merch, 
-        every item carries the My Brand promise of quality, consistency, and standout design.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-<!--EXPLORE MY WORK -->
-
-<section id="projects" class="section">
-
-  <h2>Explore My Work</h2>
-  <div class="features-grid">
-
-<article class="feature-card">
-  <img src="src/Images/MMS square Logo.png" alt="Projects Icon" class="feature-img">
-  <h3>My Military Studio</h3>
-  <p>Custom military-inspired apparel, challenge coins, and collectibles designed by veterans 
-    — for veterans and supporters.</p>
-  <a href="projects.html" class="feature-link">See Studio →</a>
-</article>
-
-<article class="feature-card">
-  <img src="src/Images/2.png" alt="Skills Icon" class="feature-img">
-  <h3>Napa Sings</h3>
-  <p>The official home of Napa — soulful vocals, heartfelt originals, and powerful 
-    covers straight from the heart of Australia.</p>
-  <a href="https://www.napasings.com" class="feature-link" target="_blank">Learn More →</a>
-</article>
-
-    <article class="feature-card">
-      <img src="src/Images/1.png" alt="Skills Icon" class="feature-img">
-      <h3>Tours of War</h3>
-      <p>Historical battlefield tours and veteran-led stories honoring the legacy of service, 
-        sacrifice, and remembrance across Asia-Pacific.</p>
-      <a href="#skills" class="feature-link">Read Blog →</a>
-    </article>
-
-
-  </div>
-</section>
-
-
-<!--MY PASSION & DRIVE SECTION -->
-
-<section id="weary-dunlop" class="section">
-  <h2 class="journey-title">My Passion & Drive</h2>
-  <h3 class="journey-subtitle">Preserving Courage and Compassion</h3>
-  <p class="journey-text">
-    Through tours, storytelling, and ongoing heritage projects, we honour the enduring legacy of Sir Edward “Weary” Dunlop — surgeon, soldier, and symbol of selfless service.
-  </p>
-
-  <div class="blog-cards">
-    <!-- Card 1 -->
-    <div class="blog-card">
-      <img src="src/Images/wearycoin.png" alt="Thai Burma Railway" class="blog-img" />
-      <div class="blog-content">
-        <h3>Following the Thai-Burma Railway</h3>
-        <p>Join us on a journey to explore the rich history of World War II in Thailand, following in the footsteps of those who endured unimaginable hardships along the Thai-Burma Railway.</p>
-        <a href="https://toursofwar.com/blog-in-their-footsteps" target="_blank" class="feature-link">Read More</a>
+<!-- MY PASSION & DRIVE SECTION -->
+  <section id="weary-dunlop" class="section">
+    <h2 class="journey-title">My Passion & Drive</h2>
+    <h3 class="journey-subtitle">Preserving Courage and Compassion</h3>
+    <p class="journey-text">
+      Through tours, storytelling, and ongoing heritage projects, we honour the enduring legacy of Sir Edward “Weary” Dunlop — surgeon, soldier, and symbol of selfless service.
+    </p>
+    <div class="blog-cards">
+      <!-- Card 1 -->
+      <div class="blog-card">
+        <img src="src/Images/wearycoin.png" alt="Thai Burma Railway" class="blog-img" />
+        <div class="blog-content">
+          <h3>Following the Thai-Burma Railway</h3>
+          <p>Join us on a journey to explore the rich history of World War II in Thailand, following in the footsteps of those who endured unimaginable hardships along the Thai-Burma Railway.</p>
+          <a href="https://toursofwar.com/blog-in-their-footsteps" target="_blank" class="feature-link">Read More</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="blog-card">
+        <img src="src/Images/Trail.webp" alt="Dunlop Trail" class="blog-img" />
+        <div class="blog-content">
+          <h3>Discover Weary Dunlop's Trail</h3>
+          <p>Support our research and campaign to build Dunlop's Trail — launching November 2024. Help preserve his story for future generations.</p>
+          <a href="https://toursofwar.com/" target="_blank" class="feature-link">Support the Project</a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="blog-card">
+        <img src="src/Images/Dunlop.avif" alt="Dunlop Memorial Park" class="blog-img" />
+        <div class="blog-content">
+          <h3>Weary Dunlop Memorial Park</h3>
+          <p>Step inside a sanctuary of remembrance. This park honours Weary Dunlop and the enduring spirit of POWs who showed resilience in the face of cruelty.</p>
+          <a href="https://toursofwar.com/weary-dunlop-memorial-park" target="_blank" class="feature-link">Visit the Park</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Card 2 -->
-    <div class="blog-card">
-      <img src="src/Images/Trail.webp" alt="Dunlop Trail" class="blog-img" />
-      <div class="blog-content">
-        <h3>Discover Weary Dunlop's Trail</h3>
-        <p>Support our research and campaign to build Dunlop's Trail — launching November 2024. Help preserve his story for future generations.</p>
-        <a href="https://toursofwar.com/" target="_blank" class="feature-link">Support the Project</a>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="blog-card">
-      <img src="src/Images/Dunlop.avif" alt="Dunlop Memorial Park" class="blog-img" />
-      <div class="blog-content">
-        <h3>Weary Dunlop Memorial Park</h3>
-        <p>Step inside a sanctuary of remembrance. This park honours Weary Dunlop and the enduring spirit of POWs who showed resilience in the face of cruelty.</p>
-        <a href="https://toursofwar.com/weary-dunlop-memorial-park" target="_blank" class="feature-link">Visit the Park</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-
+  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
-      <!-- Left: Icon -->
       <div class="footer-left">
         <div class="icon-glow-square">
           <img src="src/Images/3.png" alt="Footer Icon" class="footer-icon-img" />
         </div>
       </div>
-  
-      <!-- Center: Navigation -->
       <div class="footer-center">
-
         <ul class="footer-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
       </div>
-  
-      <!-- Right: Social Icons -->
-
       <div class="footer-right">
         <div class="footer-social">
           <a href="https://facebook.com/mymilitarystudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -271,10 +220,10 @@
         </div>
       </div>
     </div>
-  
-    <!-- Bottom Row -->
-
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Simon Lee — built with ☕ and code</p>
     </div>
   </footer>
+
+</body>
+</html>
